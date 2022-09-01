@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Глейси</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="./images/main-logo.svg" alt="Логотип сайта Глейси." width="137" height="55" />
+      </a>
+      <nav class="header__navigation">
+        <ul>
+          <li><a href="#"> Каталог </a></li>
+          <li><a href="#"> Доставка и оплата </a></li>
+          <li><a href="#"> О компании </a></li>
+        </ul>
+      </nav>
+      <div>
+        <a class="phone__number" href="tel:+78005558628" aria-label="Контактный телефон.">+7 800 555-86-28</a>
+        <div class="site__searching__container">
+          <button class="site__searching__button" type="button"></button>
+          <div class="site__searching__popup">
+            <form class="site__searching__form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="input site__searching__input" type="search" placeholder="Поиск по сайту">
+            </form>
+          </div>
+        </div>
+        <div class="user__account__container">
+          <button class="user__account__button" type="button">Вход</button>
+          <div class="user__account__popup">
+            <h2 class="user__account__title">Личный кабинет</h2>
+            <form class="site__searching__form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="input user__email" type="email" placeholder="email@example.com" required>
+              <input class="input user__password" type="password" required>
+              <button class="additional__button sign__in__button" type="submit">Войти</button>
+            </form>
+            <div>
+              <a class="forgot__password" href="#">Забыли пароль?</a>
+              <a class="registration" href="#">Регстрация</a>
+            </div>
+          </div>
+        </div>
+        <div class="cart__container">
+          <button class="cart__button" type="button"></button>
+          <div class="cart__popup">
+            <h2 class="cart__title">Корзина</h2>
+            <ul class="cart__list">
+              <li class="cart__item">
+                <a class="cart__link" href="#">
+                  <img class="cart__image" src="./images/content-images/raspberry-small.png" width="46" height="46"
+                    alt="Шарик малинового мороженого.">
+                  <div class="cart__product__description">
+                    <span class="cart__product__name">Малинка</span>
+                    <span class="cart__product__quantity">1 кг &#215; 310 &#8381;</span>
+                  </div>
+                </a>
+                <span class="product__price">310 &#8381;</span>
+                <button class="delete__button" type="button">
+                  <span class="visually__hidden">Удалить товар из корзины.</span>
+                </button>
+              </li>
+              <li class="cart-item">
+                <a class="cart__link" href="#">
+                  <img class="cart__image" src="./images/content-images/bubble-gum-small.png" width="46" height="46"
+                    alt="Шарик мороженого Бабл-гам.">
+                  <div class="cart__product__description">
+                    <span class="cart__product__name">Бабл-гам</span>
+                    <span class="cart__product__quantity">1,5 кг &#215; 320 &#8381;</span>
+                  </div>
+                </a>
+                <span class="product__price">480 &#8381;</span>
+                <button class="delete__button">
+                  <span class="visually__hidden">Удалить товар из корзины.</span>
+                </button>
+              </li>
+            </ul>
+            <div class="cart__summary">
+              <a class="checkout" href="#">Оформить заказ</a>
+              <span class="total__price">Итого: 790 &#8381;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually__hidden">Каталог мороженого.</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Каталог</a>
+        </li>
+      </ul>
+      <section class="products">
+        <h2>Сливочное мороженое</h2>
+        <ul class="products__list">
+          <li class="product">
+            <img src="./images/content-images/raspberry.jpg" alt="Шарик малинового мороженого." width="168"
+              height="168">
+            <h3 class="product__title">Малинка</h3>
+            <p class="product__description">Сливочное мороженое с малиновым джемом</p>
+            <div>
+              <span class="product__price">310 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/pistachio.jpg" alt="Шарик фисташкового мороженого." width="168"
+              height="168">
+            <h3 class="product__title">Фисташка</h3>
+            <p class="product__description">Фисташковый пломбир с кусочками шоколада</p>
+            <div>
+              <span class="product__price">340 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/blueberry.jpg" alt="Шарик черничного мороженого." width="168"
+              height="168">
+            <h3 class="product__title">Черника</h3>
+            <p class="product__description">Крем-брюле с черничным джемом</p>
+            <div>
+              <span class="product__price">330 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/bubble-gum.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Бабл-гам</h3>
+            <p class="product__description">Ванильный пломбир со сладкой посыпкой</p>
+            <div>
+              <span class="product__price">320 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/blackberry.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Ежевика</h3>
+            <p class="product__description">Сливочное мороженое с ежевичным джемом</p>
+            <div>
+              <span class="product__price">330 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/banana.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Банан</h3>
+            <p class="product__description">Сливочный пломбир с банановым вкусом</p>
+            <div>
+              <span class="product__price">340 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/chocolate.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Шоколадка</h3>
+            <p class="product__description">Классический шоколадный пломбир</p>
+            <div>
+              <span class="product__price">270 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/strawberry.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Клубничка</h3>
+            <p class="product__description">Сливочный пломбир с клубничным вкусом</p>
+            <div>
+              <span class="product__price">300 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/limon.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Лимон</h3>
+            <p class="product__description">Освежающий лимонный сорбет</p>
+            <div>
+              <span class="product__price">310 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/menthol.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Ментол</h3>
+            <p class="product__description">Сливочный пломбир с ментоловым сиропом</p>
+            <div>
+              <span class="product__price">320 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/nut.jpg" alt="Шарик мороженого Бабл-гам." width="168" height="168">
+            <h3 class="product__title">Орешек</h3>
+            <p class="product__description">Фисташковый пломбир с шоколадным сиропом</p>
+            <div>
+              <span class="product__price">360 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+          <li class="product">
+            <img src="./images/content-images/creme-brulee.jpg" alt="Шарик мороженого Бабл-гам." width="168"
+              height="168">
+            <h3 class="product__title">Крем-брюле</h3>
+            <p class="product__description">Классическое крем-брюле </p>
+            <div>
+              <span class="product__price">280 &#8381;/кг</span>
+              <a class="add__cart__link" href="#">
+                <span class="visually__hidden">Добавить в корзину</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="main__button more__products__button">Показать еще</button>
+        <div class="products__pagination">
+          <button class="backward__button">
+            <span class="visually__hidden">Назад</span>
+          </button>
+          <button class="forward__button">
+            <span class="visually__hidden">Вперёд</span>
+          </button>
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__current" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">5</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul class="social sotial__footer">
+        <li>
+          <a href="https://t.me/htmlacademy">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Телеграм.">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12ZM12.43 8.859c-1.167.485-3.5 1.49-6.998 3.014-.568.226-.866.447-.893.663-.046.366.412.51 1.034.705.085.027.173.054.263.084.613.199 1.437.432 1.865.441.389.008.823-.152 1.302-.48 3.268-2.207 4.955-3.322 5.061-3.346.075-.017.179-.039.249.024.07.062.063.18.056.212-.046.193-1.84 1.862-2.77 2.726-.29.269-.495.46-.537.504-.094.097-.19.19-.282.279-.57.548-.996.96.024 1.632.49.323.882.59 1.273.856.427.291.853.581 1.405.943.14.092.274.187.405.28.497.355.944.673 1.496.623.32-.03.652-.331.82-1.23.397-2.126 1.179-6.73 1.36-8.628a2.112 2.112 0 0 0-.02-.472.506.506 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14-.451.008-1.143.249-4.476 1.635Z"
+                fill="currentColor" /></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://vk.com/htmlacademy">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Вконтакте.">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098c.095.062.149.176.149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.496-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.051.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.277c-.11.104-.328.125-.328.125Z"
+                fill="currentColor" /></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Ютьюб.">
+              <path
+                d="m14.004 11.791-2.808-1.31c-.245-.114-.446.014-.446.285v2.468c0 .271.201.399.446.285l2.806-1.31c.247-.115.247-.303.002-.418ZM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0Zm0 16.875c-6.143 0-6.25-.554-6.25-4.875S5.857 7.125 12 7.125c6.142 0 6.25.554 6.25 4.875s-.108 4.875-6.25 4.875Z"
+                fill="currentColor" /></svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="documents__list">
+        <li class="documents__item">
+          <a href="#" class="documents__link providers__link">Для поставщиков</a>
+        </li>
+        <li class="documents__item">
+          <a href="#" class="documents__link">Наши документы</a>
+        </li>
+        <li class="documents__item">
+          <a href="#" class="documents__link">О производстве</a>
+        </li>
+        <li class="documents__item">
+          <a href="#" class="documents__link">Экологические стандарты</a>
+        </li>
+      </ul>
+      <div class="copyright__container">
+        <a class="html__academy__link" href="https://htmlacademy.ru/">
+          <img class="html__academy__logo" src="./images/logos/logo-htmlacademy.svg" alt="Логотип HTML-академии.">
+        </a>
+        <p class="copyright__info">
+          <span>Сделано в </span>
+          <a class="html__academy__link" href="https://htmlacademy.ru/">.html academy</a>
+          <span>&#169; 2021</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+
+</html>
