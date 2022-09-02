@@ -67,14 +67,13 @@ body {
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0.2em;
   font-weight: 700;
   border-radius: 26px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px rgba(252, 252, 252, 0.4);
   background-color: #fcfcfc;
   color: #000000;
   text-decoration: none;
-  padding: 16px 36px;
+  padding: 12px 32px;
   cursor: pointer;
 }
 
@@ -87,7 +86,6 @@ body {
   font-family: "Inter", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0.2em;
   font-weight: 700;
   border: none;
   border-radius: 26px;
@@ -95,7 +93,7 @@ body {
   background-color: #ff2f64;
   color: #fcfcfc;
   text-decoration: none;
-  padding: 16px 36px;
+  padding: 12px 32px;
   cursor: pointer;
 }
 
@@ -126,6 +124,151 @@ body {
   text-decoration: none;
 }
 
+.site__searching__button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(252, 252, 252, 0.3);
+  color: #2d3440;
+  border: none;
+  cursor: pointer;
+}
+
+.site__searching__popup {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 356px;
+  padding: 24px 16px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+}
+
+.input {
+  width: 324px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  padding: 16px 16px;
+}
+
+.input::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b9b9b9;
+}
+
+.user__account__button {
+  position: relative;
+  display: flex;
+  width: 88px;
+  padding: 6px 16px 6px 38px;
+  border-radius: 30px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  cursor: pointer;
+}
+
+.user__account__button svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.user__account__popup {
+  max-width: 420px;
+  padding: 48px 48px 52px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.user__account__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2d3440;
+  margin: 0 0 31px;
+}
+
+.site__searching__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.user__inputs_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user__inputs_list li {
+  margin-bottom: 16px;
+}
+
+.user__inputs_list li:last-of-type {
+  margin-bottom: 32px;
+}
+
+.sign__in__button {
+  max-width: 113px;
+  margin-right: 23px;
+}
+
+.help__links__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-3px);
+}
+
+.help__links__list li:not(:last-of-type) {
+  margin-bottom: 2px;
+}
+
+.help__link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2d3440;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #2d3440;
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.cart__button {
+  position: relative;
+  display: flex;
+  width: 115px;
+  padding: 6px 16px 6px 38px;
+  border-radius: 30px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+  cursor: pointer;
+}
+
+.cart__button svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 
 
