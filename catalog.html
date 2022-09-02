@@ -100,6 +100,109 @@
       </ul>
       <section class="products">
         <h2>Сливочное мороженое</h2>
+        <div class="filters__container">
+          <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="filter filter__sorting">
+              <legend class="filter__title">Сортировка:</legend>
+              <select name="sorting">
+                <option value="popular">по популярности</option>
+                <option value="price">по стоимости</option>
+                <option value="novelty">по новизне</option>
+              </select>
+            </fieldset>
+            <fieldset class="filter filter__price">
+              <legend class="filter__title">Цена:</legend>
+              <div class="inputs__container">
+                <input class="price__input price__input__from" type="text" name="price__from" value="100">
+                <span>&#8381; - </span>
+                <input class="price__input price__input__to" type="text" name="price__to" value="500">
+                <span>&#8381;</span>
+              </div>
+              <div class="range__slider__wrapper">
+                <div class="range__scale">
+                  <div class="range__bar">
+                    <button class="range__button range__button__min" type="button"></button>
+                    <button class="range__button range__button__max" type="button"></button>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter filter__fat__percentage">
+              <legend class="filter__title">Жирность:</legend>
+              <ul class="controls controls__fat__percentage">
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="radio" name="fat__percentage" value="0%">
+                    <span class="control__mark mark__radio"></span>
+                    0%
+                  </label>
+                </li>
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="radio" name="fat__percentage" value="to 10%" checked>
+                    <span class="control__mark mark__radio"></span>
+                    до 10%
+                  </label>
+                </li>
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="radio" name="fat__percentage" value="to 30%">
+                    <span class="control__mark mark__radio"></span>
+                    до 30%
+                  </label>
+                </li>
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="radio" name="fat__percentage" value="more 30%">
+                    <span class="control__mark mark__radio"></span>
+                    выше 30%
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter filter__ingredients">
+              <legend class="filter__title">Наполнители:</legend>
+              <ul class="controls controls__ingredients">
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="checkbox" name="ingredients" value="chocolate">
+                    <span class="control__mark mark__checkbox"></span>
+                    шоколадные
+                  </label>
+                </li>
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="checkbox" name="ingredients" value="sugar__sprinkles" checked>
+                    <span class="control__mark mark__checkbox"></span>
+                    сахарные посыпки
+                  </label>
+                </li>
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="checkbox" name="ingredients" value="fruit">
+                    <span class="control__mark mark__checkbox"></span>
+                    фрукты
+                  </label>
+                </li>
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="checkbox" name="ingredients" value="syrups">
+                    <span class="control__mark mark__checkbox"></span>
+                    сиропы
+                  </label>
+                </li>
+                <li class="control">
+                  <label class="control__label">
+                    <input class="control__input" type="checkbox" name="ingredients" value="jams">
+                    <span class="control__mark mark__checkbox"></span>
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filters__form__button" type="submit">Применить</button>
+          </form>
+        </div>
         <ul class="products__list">
           <li class="product">
             <img src="./images/content-images/raspberry.jpg" alt="Шарик малинового мороженого." width="168"
