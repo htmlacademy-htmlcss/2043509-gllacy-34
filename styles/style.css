@@ -512,6 +512,52 @@ body {
   display: grid;
 }
 
+.slider__content {
+  align-self: center;
+}
+
+.slider__title {
+  margin: 0 0 24px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+  color: #2d3440;
+}
+
+.slider__description {
+  margin: 0 0 48px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.order__button {
+  max-width: 139px;
+}
+
+.slider__images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 41px;
+}
+
+.slider__image {
+  position: relative;
+  padding: 21px;
+}
+
+.slider__image::before {
+  position: absolute;
+  content: "";
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+  z-index: -1;
+  top: 120px;
+}
+
 /* Секция gifts */
 
 .gifts {
