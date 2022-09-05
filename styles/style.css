@@ -69,6 +69,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   border-radius: 26px;
+  border: none;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px rgba(252, 252, 252, 0.4);
   background-color: #fcfcfc;
   color: #000000;
@@ -478,6 +479,10 @@ body {
   color: #2d3440;
 }
 
+.html__academy__main__link {
+  margin-bottom: 14px;
+}
+
 .html__academy__link {
   font-weight: 400;
   font-size: 12px;
@@ -485,7 +490,27 @@ body {
   color: #2d3440;
 }
 
+.copyright__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Стили главной страницы */
+
+/* Секция slider */
+
+.slider {
+  padding-left: 70px;
+}
+
+.slider__slide {
+  display: none;
+  grid-template-columns: 470px 630px;
+}
+
+.slider__slide.is__active {
+  display: grid;
+}
 
 /* Секция gifts */
 
@@ -506,6 +531,7 @@ body {
   max-width: 434px;
   color: #2d3440;
   text-align: center;
+  margin: 0;
 }
 
 .gifts__article {
@@ -540,6 +566,106 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* Секция popular__products */
+
+.popular__products {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular__products__title {
+  margin: 0 auto 107px;
+  max-width: 527px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+}
+
+.products__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 91px;
+}
+
+.product {
+  max-width: 270px;
+  background-color: #fcfcfc;
+  padding: 0 40px 24px;
+  border-radius: 8px;
+}
+
+.product__link {
+  position: relative;
+  padding-top: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.product__title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.product__description {
+  margin: 0;
+  color: #2d3440;
+  text-align: center;
+}
+
+.product__image {
+  position: absolute;
+  bottom: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+.price__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__price {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 138px;
+  margin-right: 20px;
+}
+
+.add__cart__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ff2f64;
+  background-color: #ff2f64;
+  border-radius: 50%;
+  color: #fcfcfc;
 }
 
 /* Секция advantages */
