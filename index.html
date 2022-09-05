@@ -251,25 +251,25 @@
       </section>
       <section class="gifts">
         <h2 class="gifts__title">Заказывайте мороженое и получайте подарки!</h2>
-        <article>
+        <article class="gifts__article">
           <div class="article__content">
             <h3 class="article__title">Малинка даром!</h3>
             <p class="article__description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
               малинового варенья бесплатно.</p>
             <a class="main__button article__link" href="#">Хочу подарок</a>
           </div>
-          <img src="./images/content-images/raspberry-waffle.png" alt="Ягоды малины в вафельном рожке." width="219"
-            height="268">
+          <img class="article__image" src="./images/content-images/raspberry-waffle.png"
+            alt="Ягоды малины в вафельном рожке." width="219" height="268">
         </article>
-        <article>
+        <article class="gifts__article">
           <div class="article__content">
             <h3 class="article__title">Маршмеллоу даром!</h3>
-            <p class="article__description">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок
-              совершенно бесплатно.</p>
+            <p class="article__description">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных
+              зефирок&nbsp;совершенно бесплатно.</p>
             <a class="main__button article__link" href="#">Хочу подарок</a>
           </div>
-          <img src="./images/content-images/marshmallow-waffle.png" alt="Маршмеллоу в вафельном рожке." width="219"
-            height="268">
+          <img class="article__image" src="./images/content-images/marshmallow-waffle.png"
+            alt="Маршмеллоу в вафельном рожке." width="219" height="268">
         </article>
       </section>
       <section class="popular__products">
@@ -325,27 +325,27 @@
         </ul>
       </section>
       <section class="advantages">
-        <div class="section__content">
+        <div class="advantages__content">
           <h2 class="advantages__title">
             Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
             собственного производства на развес
           </h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item__1">
               Всё наше мороженое изготавливается на собственном производстве с
               использованием современного оборудования и проверенных временем
               технологий.
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item__2">
               Закупка ингредиентов производится только у проверенных фермерских
               хозяйств, с которыми нас связывает долговременное сотрудничество.
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item__3">
               Для приготовления мороженого используются сливки и молоко
               высочайшего качества. Все ингредиенты и добавки произведены из
               натурального сырья.
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item__4">
               Доставка нашего мороженого осуществляется в специальном термопаке,
               который не даёт мороженому растаять и позволяет сохранить
               превосходный вкус.
@@ -353,27 +353,30 @@
           </ul>
         </div>
       </section>
-      <section class="news">
-        <h2 class="news__title">Новое в нашем блоге</h2>
-        <p class="news__subtitle">10 способов сервировки фруктовых щербетов
-          к столу</p>
-      </section>
-      <section class="newsletter">
-        <h2 class="visually__hidden">Подписка на рассылку</h2>
-        <p> Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
-          самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-          всякой ненужной ерунды. Честно =) </p>
-        <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="input newsletter__input" type="email" placeholder="email@example.com">
-          <button class="additional__button newsletter__button" type="submit">Отправить</button>
-        </form>
-      </section>
+      <div class="sections__wrapper">
+        <section class="news">
+          <h2 class="news__title">Новое в нашем блоге</h2>
+          <p class="news__subtitle">10 способов сервировки фруктовых щербетов
+            к&nbsp;столу</p>
+        </section>
+        <section class="newsletter">
+          <h2 class="visually__hidden">Подписка на рассылку</h2>
+          <div class="newsletter__content">
+            <p class="newsletter__text"> Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего
+              самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+              всякой ненужной ерунды. Честно =) </p>
+            <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="input newsletter__input" type="email" placeholder="email@example.com">
+              <button class="additional__button newsletter__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
       <section class="delivery">
-        <h2 class="visually__hidden">Доставка мороженого.</h2>
         <div class="delivery__content">
-          <h3 class="delivery__title">Доставка любимого мороженого на дом</h3>
+          <h2 class="delivery__title">Доставка любимого мороженого на дом</h2>
           <p class="delivery__description">
-            Хочется полакомиться любимым десертом, но нет времени съездить в
+            Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в
             магазин? Закажите доставку мороженого на дом, и курьер привезёт вам
             ваш заказ в течение часа!
           </p>
@@ -419,14 +422,14 @@
           <h3 class="phone__title">Для заказов по телефону:</h3>
           <a class="contact__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <span class="call__time">(с 10 до 20 ежедневно)</span>
+          <button class="additional__button feedback__button" type="button">Форма обратной связи</button>
         </div>
-        <button class="additional__button feedback__button" type="button">Форма обратной связи</button>
       </section>
     </main>
-    <footer>
+    <footer class="page__footer">
       <ul class="social sotial__footer">
         <li>
-          <a href="https://t.me/htmlacademy">
+          <a class="sotial__link" href="https://t.me/htmlacademy">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Телеграм.">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -435,7 +438,7 @@
           </a>
         </li>
         <li>
-          <a href="https://vk.com/htmlacademy">
+          <a class="sotial__link" href="https://vk.com/htmlacademy">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Вконтакте.">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -444,7 +447,7 @@
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/user/htmlacademyru">
+          <a class="sotial__link" href="https://www.youtube.com/user/htmlacademyru">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Ютьюб.">
               <path
@@ -455,16 +458,16 @@
       </ul>
       <ul class="documents__list">
         <li class="documents__item">
-          <a href="#" class="documents__link providers__link">Для поставщиков</a>
+          <a class="documents__link providers__link" href="#">Для поставщиков</a>
         </li>
         <li class="documents__item">
-          <a href="#" class="documents__link">Наши документы</a>
+          <a class="documents__link" href="#">Наши документы</a>
         </li>
         <li class="documents__item">
-          <a href="#" class="documents__link">О производстве</a>
+          <a class="documents__link" href="#">О производстве</a>
         </li>
         <li class="documents__item">
-          <a href="#" class="documents__link">Экологические стандарты</a>
+          <a class="documents__link" href="#">Экологические стандарты</a>
         </li>
       </ul>
       <div class="copyright__container">
