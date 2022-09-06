@@ -251,7 +251,7 @@
             <button class="filters__form__button" type="submit">Применить</button>
           </form>
         </div>
-        <ul class="products__list">
+        <ul class="products__list products__list__catalog">
           <li class="product">
             <a class="product__link" href="#">
               <img class="product__image" src="./images/content-images/raspberry.jpg" alt="Шарик малинового мороженого."
@@ -469,31 +469,33 @@
             </div>
           </li>
         </ul>
-        <button class="main__button more__products__button">Показать еще</button>
-        <div class="products__pagination">
-          <button class="backward__button">
-            <span class="visually__hidden">Назад</span>
-          </button>
-          <button class="forward__button">
-            <span class="visually__hidden">Вперёд</span>
-          </button>
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__current" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">5</a>
-            </li>
-          </ul>
+        <div class="more__products__container">
+          <button class="main__button more__products__button">Показать еще</button>
+          <div class="products__pagination">
+            <button class="pagination__button backward__button">
+              <span class="visually__hidden">Назад</span>
+            </button>
+            <button class="pagination__button forward__button">
+              <span class="visually__hidden">Вперёд</span>
+            </button>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__link pagination__current">3</span>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">5</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
