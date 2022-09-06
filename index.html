@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="page__header">
       <a class="header__logo" href="#">
         <img src="./images/main-logo.svg" alt="Логотип сайта Глейси." width="137" height="55" />
       </a>
@@ -22,7 +22,7 @@
               <span class="catalog__popup__title">Новинки</span>
               <ul class="catalog__popup__list">
                 <li class="catalog__popup__item">
-                  <a href="#" class="catalog__popup__link">Сливочное</a>
+                  <a href="./catalog.html" class="catalog__popup__link">Сливочное</a>
                 </li>
                 <li class="catalog__popup__item">
                   <a href="#" class="catalog__popup__link">Щербеты</a>
@@ -44,7 +44,7 @@
           </li>
         </ul>
       </nav>
-      <div>
+      <div class="header__user__container">
         <a class="phone__number" href="tel:+78005558628" aria-label="Контактный телефон.">+7 800 555-86-28</a>
         <div class="site__searching__container">
           <button class="site__searching__button" type="button">
@@ -140,7 +140,7 @@
       <h1 class="visually__hidden">Глейси - магазин продажи мороженого на развес.</h1>
       <section class="slider">
         <h2 class="visually__hidden">Промо-слайдер</h2>
-        <div class="slider__slide is__active">
+        <div class="slider__slide">
           <div class="slider__content">
             <h3 class="slider__title">Нежный пломбир с&nbsp;клубничным джемом</h3>
             <p class="slider__description">Натуральное мороженое из свежих сливок
@@ -151,14 +151,6 @@
             <div class="slider__image">
               <img src="./images/content-images/strawberry-ice-cream-waffle.png"
                 alt="Вафельный рожок мороженого пломбир с клубничным джемом." width="306" height="507">
-            </div>
-            <div class="slider__image__small">
-              <img src="./images/content-images/banana-ice-cream-waffle.png"
-                alt="Вафельный рожок сливочного бананового мороженого." width="66" height="150">
-            </div>
-            <div class="slider__image__small">
-              <img src="./images/content-images/caramel-ice-cream-waffle.png"
-                alt="Вафельный рожок карамельного мороженого с маршмеллоу." width="66" height="150">
             </div>
           </div>
         </div>
@@ -174,14 +166,6 @@
               <img src="./images/content-images/banana-ice-cream-waffle.png"
                 alt="Вафельный рожок сливочного бананового мороженого." width="306" height="507">
             </div>
-            <div class="slider__image__small">
-              <img src="./images/content-images/caramel-ice-cream-waffle.png"
-                alt="Вафельный рожок карамельного мороженого с маршмеллоу." width="66" height="150">
-            </div>
-            <div class="slider__image__small">
-              <img src="./images/content-images/strawberry-ice-cream-waffle.png"
-                alt="Вафельный рожок мороженого пломбир с клубничным джемом." width="66" height="150">
-            </div>
           </div>
         </div>
         <div class="slider__slide">
@@ -196,32 +180,38 @@
               <img src="./images/content-images/caramel-ice-cream-waffle.png"
                 alt="Вафельный рожок карамельного мороженого с маршмеллоу." width="306" height="507">
             </div>
-            <div class="slider__image__small">
-              <img src="./images/content-images/strawberry-ice-cream-waffle.png"
-                alt="Вафельный рожок мороженого пломбир с клубничным джемом." width="66" height="150">
-            </div>
-            <div class="slider__image__small">
-              <img src="./images/content-images/banana-ice-cream-waffle.png"
-                alt="Вафельный рожок сливочного бананового мороженого." width="66" height="150">
-            </div>
           </div>
         </div>
         <div class="slider__toggles">
-          <button class="prev__slide__button" type="button">
+          <button class="slider__toggle prev__slide__button" type="button">
             <span class="visually__hidden">Предыдущий слайд.</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.803 3.805a.665.665 0 1 0-.94-.94L4.195 7.533a.665.665 0 0 0-.003.938l.004.003 4.668 4.668a.665.665 0 1 0 .94-.94L5.605 8.003l4.198-4.198Z"
+                fill="currentColor" /></svg>
           </button>
-          <button class="next__slide__button" type="button">
+          <button class="slider__toggle next__slide__button" type="button">
             <span class="visually__hidden">Следующий слайд.</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z"
+                fill="currentColor" /></svg>
           </button>
         </div>
         <div class="slider__pagination">
-          <button class="slider__pagination__button" type="button"></button>
-          <button class="slider__pagination__button" type="button"></button>
-          <button class="slider__pagination__button" type="button"></button>
+          <button class="slider__pagination__button is__active" type="button">
+            <span class="visually__hidden">Первый товар.</span>
+          </button>
+          <button class="slider__pagination__button" type="button">
+            <span class="visually__hidden">Второй товар.</span>
+          </button>
+          <button class="slider__pagination__button" type="button">
+            <span class="visually__hidden">Третий товар.</span>
+          </button>
         </div>
-        <ul class="social slider__sotial">
+        <ul class="social slider__social">
           <li>
-            <a class="sotial__link" href="https://t.me/htmlacademy">
+            <a class="social__link" href="https://t.me/htmlacademy">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Телеграм.">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -230,7 +220,7 @@
             </a>
           </li>
           <li>
-            <a class="sotial__link" href="https://vk.com/htmlacademy">
+            <a class="social__link" href="https://vk.com/htmlacademy">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Вконтакте.">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -239,7 +229,7 @@
             </a>
           </li>
           <li>
-            <a class="sotial__link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
                 aria-label="Ютьюб.">
                 <path
@@ -454,7 +444,7 @@
     <footer class="page__footer">
       <ul class="social sotial__footer">
         <li>
-          <a class="sotial__link" href="https://t.me/htmlacademy">
+          <a class="social__link" href="https://t.me/htmlacademy">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Телеграм.">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -463,7 +453,7 @@
           </a>
         </li>
         <li>
-          <a class="sotial__link" href="https://vk.com/htmlacademy">
+          <a class="social__link" href="https://vk.com/htmlacademy">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Вконтакте.">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -472,7 +462,7 @@
           </a>
         </li>
         <li>
-          <a class="sotial__link" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
               aria-label="Ютьюб.">
               <path
