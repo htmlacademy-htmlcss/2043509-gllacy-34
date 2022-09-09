@@ -1071,7 +1071,7 @@ body {
 }
 
 .news {
-  padding: 34px 32px 32px 34px;
+  padding: 32px 32px 32px 34px;
   background-color: #ffffff;
   background-image: url("../images/serving.png");
   background-repeat: no-repeat;
@@ -1174,7 +1174,7 @@ body {
 
 .delivery__content {
   z-index: 1;
-  padding-top: 102px;
+  padding-top: 104px;
 }
 
 .delivery__title {
@@ -1201,6 +1201,118 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   padding: 40px 40px 42px;
+}
+
+.delivery__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delivery__form__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 32px;
+}
+
+.inputs__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 20px;
+  margin-bottom: 32px;
+}
+
+.input__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.label__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.delivery__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  margin-right: 4px;
+}
+
+.tooltip__button {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/icons/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  background-color: #fcfcfc;
+}
+
+.tooltip__button:hover+.tooltip__text {
+  display: block;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip__text {
+  position: absolute;
+  top: -10px;
+  left: 22px;
+  display: none;
+  width: 163px;
+  padding: 10px 8px;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  border: 1px solid #b9b9b9;
+  box-shadow: 0 4px 8px rgba(194, 194, 194, 0.2);
+  z-index: 2;
+}
+
+.tooltip__text::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: -5px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fcfcfc;
+  border-left: 1px solid #b9b9b9;
+  border-top: 1px solid #b9b9b9;
+  border-right: 1px solid #fcfcfc;
+  border-bottom: 1px solid #fcfcfc;
+  transform: rotate(-45deg);
+  box-shadow: 0p 2px 12px rgba(173, 152, 143, 0.18);
+}
+
+.delivery__date__input {
+  max-width: 117px;
+}
+
+.delivery__phone__input {
+  max-width: 287px;
+}
+
+.input__wrapper__address {
+  grid-column: 1/-1;
+}
+
+.delivery__address__input {
+  width: 420px;
 }
 
 /* Секция contacts */

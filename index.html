@@ -15,6 +15,7 @@
         <img src="./images/main-logo.svg" alt="Логотип сайта Глейси." width="137" height="55" />
       </a>
       <nav class="header__navigation">
+        <h2 class="visually__hidden">Навигация по сайту.</h2>
         <ul class="header__navigation__list">
           <li class="header__navigation__item header__navigation__item__catalog">
             <a class="header__navigation__link" href="#"> Каталог </a>
@@ -399,33 +400,42 @@
           </p>
         </div>
         <div class="delivery__form__container">
-          <h3 class="delivery__form__title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
+          <h3 class="delivery__form__title">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
             заказ.</h3>
           <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="input__wrapper">
-              <label for="date">Дата</label>
-              <span class="tooltip">
-                <button class="tooltip__button" type="button" aria-labelledby="tooltip-date">
-                </button>
-                <span class="tooltip__text" role="tooltip" id="tooltip-date">Укажите желаемую дату доставки в формате
-                  число.месяц.год</span>
-              </span>
-              <input class="input delivery__date__input" type="text" placeholder="01.04.2020" id="date">
-            </div>
-            <div class="input__wrapper">
-              <label for="phone">Телефон</label>
-              <input class="input delivery__phone__input" type="text" placeholder="+7 800 999-00-00" id="phone">
-            </div>
-            <div class="input__wrapper">
-              <label for="address">Адрес</label>
-              <span class="tooltip">
-                <button class="tooltip__button" type="button" aria-labelledby="tooltip-address">
-                </button>
-                <span class="tooltip__text" role="tooltip" id="tooltip-address">Введите название улицы, дома и
-                  квартиры</span>
-              </span>
-              <input class="input delivery__address__input" type="text" placeholder="ул. Большая Конюшенная, 19/8"
-                id="address">
+            <div class="inputs__container">
+              <div class="input__wrapper">
+                <div class="label__container">
+                  <label class="delivery__label" for="date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip__button" type="button" aria-labelledby="tooltip-date">
+                    </button>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-date">Укажите желаемую дату доставки
+                      в&nbsp;формате
+                      число.месяц.год</span>
+                  </span>
+                </div>
+                <input class="input delivery__date__input" type="text" placeholder="01.04.2020" id="date">
+              </div>
+              <div class="input__wrapper">
+                <div class="label__container">
+                  <label class="delivery__label" for="phone">Телефон</label>
+                </div>
+                <input class="input delivery__phone__input" type="text" placeholder="+7 800 999-00-00" id="phone">
+              </div>
+              <div class="input__wrapper input__wrapper__address">
+                <div class="label__container">
+                  <label class="delivery__label" for="address">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip__button" type="button" aria-labelledby="tooltip-address">
+                    </button>
+                    <span class="tooltip__text" role="tooltip" id="tooltip-address">Введите название улицы, дома и
+                      квартиры</span>
+                  </span>
+                </div>
+                <input class="input delivery__address__input" type="text" placeholder="ул. Большая Конюшенная, 19/8"
+                  id="address">
+              </div>
             </div>
             <button class="additional__button delivery__button" type="submit">Отправить</button>
           </form>
