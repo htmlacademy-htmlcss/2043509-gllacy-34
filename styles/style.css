@@ -1439,10 +1439,28 @@ body {
   margin: 0 0 40px;
 }
 
-
-.filters__container {
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 95px;
   max-width: 823px;
+}
+
+.filter__input__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fcfcfc;
+  opacity: 0.3;
+  border-radius: 20px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px 16px 0;
+  padding: 0;
+  border: none;
 }
 
 .products {

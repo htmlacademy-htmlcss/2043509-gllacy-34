@@ -154,35 +154,37 @@
       </ul>
       <section class="products">
         <h2 class="ice__cream__catalog__title">Сливочное мороженое</h2>
-        <div class="filters__container">
-          <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="filter filter__sorting">
-              <legend class="filter__title">Сортировка:</legend>
+        <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="filter filter__sorting">
+            <legend class="filter__title">Сортировка:</legend>
+            <div class="filter__input__wrapper">
               <select name="sorting">
                 <option value="popular">по популярности</option>
                 <option value="price">по стоимости</option>
                 <option value="novelty">по новизне</option>
               </select>
-            </fieldset>
-            <fieldset class="filter filter__price">
-              <legend class="filter__title">Цена:</legend>
-              <div class="inputs__container">
-                <input class="price__input price__input__from" type="text" name="price__from" value="100">
-                <span>&#8381; - </span>
-                <input class="price__input price__input__to" type="text" name="price__to" value="500">
-                <span>&#8381;</span>
-              </div>
-              <div class="range__slider__wrapper">
-                <div class="range__scale">
-                  <div class="range__bar">
-                    <button class="range__button range__button__min" type="button"></button>
-                    <button class="range__button range__button__max" type="button"></button>
-                  </div>
+            </div>
+          </fieldset>
+          <fieldset class="filter filter__price">
+            <legend class="filter__title">Цена:</legend>
+            <div class="inputs__container">
+              <input class="price__input price__input__from" type="text" name="price__from" value="100">
+              <span>&#8381; - </span>
+              <input class="price__input price__input__to" type="text" name="price__to" value="500">
+              <span>&#8381;</span>
+            </div>
+            <div class="filter__input__wrapper">
+              <div class="range__scale">
+                <div class="range__bar">
+                  <button class="range__button range__button__min" type="button"></button>
+                  <button class="range__button range__button__max" type="button"></button>
                 </div>
               </div>
-            </fieldset>
-            <fieldset class="filter filter__fat__percentage">
-              <legend class="filter__title">Жирность:</legend>
+            </div>
+          </fieldset>
+          <fieldset class="filter filter__fat__percentage">
+            <legend class="filter__title">Жирность:</legend>
+            <div class="filter__input__wrapper">
               <ul class="controls controls__fat__percentage">
                 <li class="control">
                   <label class="control__label">
@@ -213,9 +215,11 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="filter filter__ingredients">
-              <legend class="filter__title">Наполнители:</legend>
+            </div>
+          </fieldset>
+          <fieldset class="filter filter__ingredients">
+            <legend class="filter__title">Наполнители:</legend>
+            <div class="filter__input__wrapper">
               <ul class="controls controls__ingredients">
                 <li class="control">
                   <label class="control__label">
@@ -253,10 +257,10 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
-            <button class="filters__form__button" type="submit">Применить</button>
-          </form>
-        </div>
+            </div>
+          </fieldset>
+          <button class="filters__form__button" type="submit">Применить</button>
+        </form>
         <ul class="products__list products__list__catalog">
           <li class="product">
             <a class="product__link" href="#">
