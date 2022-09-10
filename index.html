@@ -143,44 +143,40 @@
       <h1 class="visually__hidden">Глейси - магазин продажи мороженого на развес.</h1>
       <section class="slider">
         <h2 class="visually__hidden">Промо-слайдер</h2>
-        <div class="slider__slide">
-          <div class="slider__content">
-            <h3 class="slider__title">Нежный пломбир с&nbsp;клубничным джемом</h3>
-            <p class="slider__description">Натуральное мороженое из свежих сливок
-              и&nbsp;молока с вкуснейшим клубничным джемом <br> – это&nbsp;идеальный десерт для всей семьи. </p>
-            <a class="main__button order__button" href="#">Заказать</a>
-          </div>
-          <div class="slider__images">
-            <div class="slider__image">
-              <img src="./images/content-images/strawberry-ice-cream-waffle.png"
+        <div class="slider__slides">
+          <div class="slider__slide  is__active" data-color="#feafc3">
+            <div class="slider__content">
+              <h3 class="slider__title">Нежный пломбир с&nbsp;клубничным джемом</h3>
+              <p class="slider__description">Натуральное мороженое из свежих сливок
+                и&nbsp;молока с вкуснейшим клубничным джемом <br> – это&nbsp;идеальный десерт для всей семьи. </p>
+              <a class="main__button order__button" href="#">Заказать</a>
+            </div>
+            <div class="slider__image__wrapper">
+              <img class="slider__image" src="./images/content-images/strawberry-ice-cream-waffle.png"
                 alt="Вафельный рожок мороженого пломбир с клубничным джемом." width="306" height="507">
             </div>
           </div>
-        </div>
-        <div class="slider__slide">
-          <div class="slider__content">
-            <h3 class="slider__title">Сливочное мороженое со вкусом банана</h3>
-            <p class="slider__description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
-              наслаждение даже в самый жаркий летний день. </p>
-            <a class="main__button order__button" href="#">Заказать</a>
-          </div>
-          <div class="slider__images">
-            <div class="slider__image">
-              <img src="./images/content-images/banana-ice-cream-waffle.png"
+          <div class="slider__slide" data-color="#69a9ff">
+            <div class="slider__content">
+              <h3 class="slider__title">Сливочное мороженое со вкусом банана</h3>
+              <p class="slider__description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+                наслаждение даже в самый жаркий летний день. </p>
+              <a class="main__button order__button" href="#">Заказать</a>
+            </div>
+            <div class="slider__image__wrapper">
+              <img class="slider__image" src="./images/content-images/banana-ice-cream-waffle.png"
                 alt="Вафельный рожок сливочного бананового мороженого." width="306" height="507">
             </div>
           </div>
-        </div>
-        <div class="slider__slide">
-          <div class="slider__content">
-            <h3 class="slider__title">Карамельный пломбир с маршмеллоу</h3>
-            <p class="slider__description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
-              сердца сладкоежек всех возрастов.</p>
-            <a class="main__button order__button" href="#">Заказать</a>
-          </div>
-          <div class="slider__images">
-            <div class="slider__image">
-              <img src="./images/content-images/caramel-ice-cream-waffle.png"
+          <div class="slider__slide" data-color="#fcc850">
+            <div class="slider__content">
+              <h3 class="slider__title">Карамельный пломбир с маршмеллоу</h3>
+              <p class="slider__description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+                сердца сладкоежек всех возрастов.</p>
+              <a class="main__button order__button" href="#">Заказать</a>
+            </div>
+            <div class="slider__image__wrapper">
+              <img class="slider__image" src="./images/content-images/caramel-ice-cream-waffle.png"
                 alt="Вафельный рожок карамельного мороженого с маршмеллоу." width="306" height="507">
             </div>
           </div>
@@ -201,46 +197,48 @@
                 fill="currentColor" /></svg>
           </button>
         </div>
-        <div class="slider__pagination">
-          <button class="slider__pagination__button is__active" type="button">
-            <span class="visually__hidden">Первый товар.</span>
-          </button>
-          <button class="slider__pagination__button" type="button">
-            <span class="visually__hidden">Второй товар.</span>
-          </button>
-          <button class="slider__pagination__button" type="button">
-            <span class="visually__hidden">Третий товар.</span>
-          </button>
+        <div class="slider__footer">
+          <div class="slider__pagination">
+            <button class="slider__pagination__button is__active" type="button">
+              <span class="visually__hidden">Первый товар.</span>
+            </button>
+            <button class="slider__pagination__button" type="button">
+              <span class="visually__hidden">Второй товар.</span>
+            </button>
+            <button class="slider__pagination__button" type="button">
+              <span class="visually__hidden">Третий товар.</span>
+            </button>
+          </div>
+          <ul class="social slider__social">
+            <li>
+              <a class="social__link" href="https://t.me/htmlacademy">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Телеграм.">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12ZM12.43 8.859c-1.167.485-3.5 1.49-6.998 3.014-.568.226-.866.447-.893.663-.046.366.412.51 1.034.705.085.027.173.054.263.084.613.199 1.437.432 1.865.441.389.008.823-.152 1.302-.48 3.268-2.207 4.955-3.322 5.061-3.346.075-.017.179-.039.249.024.07.062.063.18.056.212-.046.193-1.84 1.862-2.77 2.726-.29.269-.495.46-.537.504-.094.097-.19.19-.282.279-.57.548-.996.96.024 1.632.49.323.882.59 1.273.856.427.291.853.581 1.405.943.14.092.274.187.405.28.497.355.944.673 1.496.623.32-.03.652-.331.82-1.23.397-2.126 1.179-6.73 1.36-8.628a2.112 2.112 0 0 0-.02-.472.506.506 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14-.451.008-1.143.249-4.476 1.635Z"
+                    fill="currentColor" /></svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Вконтакте.">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098c.095.062.149.176.149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.496-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.051.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.277c-.11.104-.328.125-.328.125Z"
+                    fill="currentColor" /></svg>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Ютьюб.">
+                  <path
+                    d="m14.004 11.791-2.808-1.31c-.245-.114-.446.014-.446.285v2.468c0 .271.201.399.446.285l2.806-1.31c.247-.115.247-.303.002-.418ZM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0Zm0 16.875c-6.143 0-6.25-.554-6.25-4.875S5.857 7.125 12 7.125c6.142 0 6.25.554 6.25 4.875s-.108 4.875-6.25 4.875Z"
+                    fill="currentColor" /></svg>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="social slider__social">
-          <li>
-            <a class="social__link" href="https://t.me/htmlacademy">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Телеграм.">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12ZM12.43 8.859c-1.167.485-3.5 1.49-6.998 3.014-.568.226-.866.447-.893.663-.046.366.412.51 1.034.705.085.027.173.054.263.084.613.199 1.437.432 1.865.441.389.008.823-.152 1.302-.48 3.268-2.207 4.955-3.322 5.061-3.346.075-.017.179-.039.249.024.07.062.063.18.056.212-.046.193-1.84 1.862-2.77 2.726-.29.269-.495.46-.537.504-.094.097-.19.19-.282.279-.57.548-.996.96.024 1.632.49.323.882.59 1.273.856.427.291.853.581 1.405.943.14.092.274.187.405.28.497.355.944.673 1.496.623.32-.03.652-.331.82-1.23.397-2.126 1.179-6.73 1.36-8.628a2.112 2.112 0 0 0-.02-.472.506.506 0 0 0-.172-.325c-.143-.117-.365-.142-.465-.14-.451.008-1.143.249-4.476 1.635Z"
-                  fill="currentColor" /></svg>
-            </a>
-          </li>
-          <li>
-            <a class="social__link" href="https://vk.com/htmlacademy">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Вконтакте.">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12Zm-11.412 2.975h-.717s-1.582.083-2.976-1.188c-1.52-1.388-2.863-4.14-2.863-4.14s-.077-.18.007-.268c.095-.098.352-.104.352-.104l1.715-.01s.161.024.277.098c.095.062.149.176.149.176s.277.615.644 1.17c.716 1.085 1.05 1.322 1.293 1.206.354-.17.248-1.533.248-1.533s.007-.496-.178-.716c-.143-.17-.414-.22-.533-.235-.096-.011.062-.207.267-.295.309-.133.854-.14 1.498-.135.501.005.645.032.842.074.455.096.44.405.41 1.07-.01.2-.02.43-.02.697 0 .06-.002.124-.004.19-.01.34-.023.73.233.876.132.074.453.011 1.256-1.185.381-.566.667-1.233.667-1.233s.062-.119.16-.17c.098-.051.232-.036.232-.036l1.805-.01s.542-.056.63.158c.091.226-.203.751-.94 1.612-.696.813-1.036 1.115-1.01 1.38.02.196.242.372.67.72.888.722 1.124 1.101 1.18 1.192a.447.447 0 0 0 .011.016c.398.578-.44.623-.44.623l-1.603.02s-.345.06-.798-.214c-.237-.142-.469-.375-.69-.597-.337-.339-.649-.652-.915-.578-.447.124-.433.967-.433.967s.004.18-.098.277c-.11.104-.328.125-.328.125Z"
-                  fill="currentColor" /></svg>
-            </a>
-          </li>
-          <li>
-            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-                aria-label="Ютьюб.">
-                <path
-                  d="m14.004 11.791-2.808-1.31c-.245-.114-.446.014-.446.285v2.468c0 .271.201.399.446.285l2.806-1.31c.247-.115.247-.303.002-.418ZM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0Zm0 16.875c-6.143 0-6.25-.554-6.25-4.875S5.857 7.125 12 7.125c6.142 0 6.25.554 6.25 4.875s-.108 4.875-6.25 4.875Z"
-                  fill="currentColor" /></svg>
-            </a>
-          </li>
-        </ul>
       </section>
       <section class="gifts">
         <h2 class="gifts__title">Заказывайте мороженое и получайте подарки!</h2>
@@ -508,6 +506,7 @@
         </p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 
 </html>
