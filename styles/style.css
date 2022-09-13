@@ -1474,13 +1474,13 @@ body {
   font-size: 32px;
   line-height: 46px;
   color: #2d3440;
-  margin: 0 0 40px;
+  margin: 0 0 39px;
 }
 
 .filters {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 95px;
   max-width: 823px;
 }
@@ -1488,8 +1488,14 @@ body {
 .filter__input__wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
+  padding: 9px 24px;
+}
+
+.filter__input__wrapper__fat {
+  padding: 7px 23px 7px 23px;
 }
 
 .filter {
@@ -1498,6 +1504,211 @@ body {
   margin: 0 24px 16px 0;
   padding: 0;
   border: none;
+}
+
+.filter__fat__percentage {
+  margin-right: 0;
+  max-width: 383px;
+}
+
+.filter__title {
+  padding: 0;
+  margin-left: 16px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 20px;
+  color: #2d3440;
+  margin-bottom: 8px;
+}
+
+.select__input {
+  position: relative;
+  width: 196px;
+  padding: 8px 33px 8px 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 20px;
+  color: #2d3440;
+  appearance: none;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px top 50%;
+}
+
+.filter__price {
+  min-height: 36px;
+  padding: 8px 16px;
+}
+
+.range__scale {
+  width: 164px;
+  height: 2px;
+  background-color: rgb(86, 92, 102, 0.3);
+  border-radius: 2px;
+}
+
+.range__bar {
+  position: relative;
+  left: 32px;
+  width: 72px;
+  height: 2px;
+  background-color: #565c66;
+  z-index: 1;
+}
+
+.range__button {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fcfcfc;
+  box-shadow: inset 0 0 0 6px #2d3440;
+  top: -7.5px;
+  cursor: pointer;
+}
+
+.range__button__min {
+  left: -8px;
+}
+
+.range__button__max {
+  right: -8px;
+}
+
+.controls {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.control:not(:last-child) {
+  margin-right: 16px;
+}
+
+.control__label {
+  position: relative;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  padding-left: 21px;
+}
+
+.control__input {
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: inherit;
+}
+
+.mark__radio {
+  background-image: url("../images/icons/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mark__checkbox {
+  background-image: url("../images/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control__input:disabled+.control__mark {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.control__input:hover+.mark__radio,
+.control__input:focus+.mark__radio {
+  background-image: url("../images/icons/radio-hover.svg");
+}
+
+.control__input:checked:hover+.mark__radio,
+.control__input:checked:focus+.mark__radio {
+  background-image: url("../images/icons/radio-checked-hover.svg");
+}
+
+.control__input:checked+.mark__radio {
+  background-image: url("../images/icons/radio-checked.svg");
+}
+
+.control__input:disabled:hover+.mark__radio {
+  background-image: url("../images/icons/radio.svg");
+}
+
+.control__input:checked:disabled:hover+.mark__radio {
+  background-image: url("../images/icons/radio-checked.svg");
+}
+
+.control__input:hover+.mark__checkbox,
+.control__input:focus+.mark__checkbox {
+  background-image: url("../images/icons/checkbox-hover.svg");
+}
+
+.control__input:checked:hover+.mark__checkbox,
+.control__input:checked:focus+.mark__checkbox {
+  background-image: url("../images/icons/checkbox-checked-hover.svg");
+}
+
+.control__input:checked+.mark__checkbox {
+  background-image: url("../images/icons/checkbox-checked.svg");
+}
+
+.control__input:disabled:hover+.mark__checkbox {
+  background-image: url("../images/icons/checkbox.svg");
+}
+
+.control__input:checked:disabled:hover+.mark__checkbox {
+  background-image: url("../images/icons/checkbox-checked.svg");
+}
+
+.filter__ingredients {
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+
+.filters__form__button {
+  align-self: flex-end;
+  font-size: 14px;
+  padding: 10px 32px;
+  width: 185px;
+  color: #2d3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px #fcfcfc;
+}
+
+.filters__form__button:hover {
+  background-color: #fcfcfc;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+}
+
+.filters__form__button:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 0 0 0 2px #feafc3;
+}
+
+.filters__form__button:focus {
+  background-color: #feafc3;
+  box-shadow: 0 0 0 2px #2d3440;
+}
+
+.filters__form__button:disabled {
+  opacity: 0.4;
 }
 
 .products {
