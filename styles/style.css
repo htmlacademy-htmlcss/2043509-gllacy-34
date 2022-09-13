@@ -745,7 +745,6 @@ body {
 }
 
 .slider__slide.is__active {
-  /* order: -1; */
   width: 800px;
   display: grid;
   grid-template-columns: 470px 630px;
@@ -815,7 +814,7 @@ body {
   width: 312px;
   height: 312px;
   border-radius: 50%;
-  background-color: rgba(255, 203, 216, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: -1;
   top: 122px;
 }
