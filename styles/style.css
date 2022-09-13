@@ -80,6 +80,56 @@ body {
   cursor: pointer;
 }
 
+.main__button:focus {
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px #2d3440;
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: none;
+}
+
+.main__button:hover {
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.4);
+}
+
+.main__button:active {
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px #2d3440;
+  background-color: #fcfcfc;
+}
+
+.main__button:disabled {
+  box-shadow: 0 0 0 4px rgba(252, 252, 252, 0.4);
+  background-color: #e7e7e7;
+  color: #b9b9b9;
+}
+
+.main__button.waiting {
+  position: relative;
+  padding-right: 56px;
+}
+
+.main__button.waiting::after {
+  position: absolute;
+  content: "";
+  right: 32px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid rgba(36, 36, 36, 0.24);
+  border-right: 2px solid #242424;
+  border-radius: 50%;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .additional__button {
   position: relative;
   display: flex;
@@ -98,6 +148,48 @@ body {
   text-decoration: none;
   padding: 12px 32px;
   cursor: pointer;
+}
+
+.additional__button.waiting {
+  position: relative;
+  padding-right: 56px;
+}
+
+.additional__button.waiting::after {
+  position: absolute;
+  content: "";
+  right: 32px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid rgba(252, 252, 252, 0.25);
+  border-right: 2px solid #fcfcfc;
+  border-radius: 50%;
+  animation: rotation 2s infinite linear;
+}
+
+.additional__button:focus {
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px #2d3440;
+  background-color: #ff2f64;
+  outline: none;
+}
+
+.additional__button:hover {
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px rgba(255, 47, 100, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
+  color: #2d3440;
+}
+
+.additional__button:active {
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 2px #2d3440;
+  background-color: #feafc3;
+  color: #fcfcfc;
+}
+
+.additional__button:disabled {
+  box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3);
+  background-color: #b9b9b9;
+  color: #565c66;
 }
 
 .input {
@@ -434,7 +526,8 @@ body {
 }
 
 .sign__in__button {
-  max-width: 113px;
+  min-width: 113px;
+  max-width: 137px;
   margin-right: 23px;
 }
 
@@ -620,7 +713,8 @@ body {
 }
 
 .checkout__button {
-  max-width: 198px;
+  min-width: 198px;
+  max-width: 222px;
   margin-right: 32px;
 }
 
@@ -751,7 +845,7 @@ body {
 }
 
 .slider__slide.is__active .slider__content {
-  display: block;
+  display: flex;
 }
 
 .slider__slide.is__active .slider__image__wrapper {
@@ -775,6 +869,8 @@ body {
 
 .slider__content {
   display: none;
+  flex-direction: column;
+  align-items: flex-start;
   align-self: center;
   padding: 42px 0 30px;
 }
@@ -795,7 +891,8 @@ body {
 }
 
 .order__button {
-  max-width: 139px;
+  min-width: 139px;
+  max-width: 163px;
 }
 
 .slider__image__wrapper {
@@ -907,6 +1004,7 @@ body {
 .article__content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   height: 100%;
 }
 
@@ -927,7 +1025,8 @@ body {
 }
 
 .article__link {
-  max-width: 176px;
+  min-width: 176px;
+  max-width: 200px;
   margin-top: auto;
 }
 
@@ -1036,6 +1135,32 @@ body {
   background-color: #ff2f64;
   border-radius: 50%;
   color: #fcfcfc;
+}
+
+.add__cart__link:focus {
+  border: 2px solid #2d3440;
+  background-color: #ff2f64;
+  color: #fcfcfc;
+  outline: none;
+}
+
+.add__cart__link:hover {
+  border: 2px solid #ff2f64;
+  background-color: rgba(252, 252, 252, 0.3);
+  color: #2d3440;
+}
+
+.add__cart__link:active {
+  border: 2px solid #ff2f64;
+  background-color: #ffcbd8;
+  color: #2d3440;
+}
+
+.add__cart__link.disabled {
+  border: 2px solid #b9b9b9;
+  background-color: #b9b9b9;
+  color: #565c66;
+  pointer-events: none;
 }
 
 /* Секция advantages */
@@ -1188,7 +1313,8 @@ body {
 }
 
 .newsletter__button {
-  width: 152px;
+  min-width: 152px;
+  max-width: 176px;
 }
 
 /* Секция delivery */
@@ -1365,6 +1491,11 @@ body {
   width: 420px;
 }
 
+.delivery__button {
+  min-width: 152px;
+  max-width: 176px;
+}
+
 /* Секция contacts */
 
 .contacts {
@@ -1426,6 +1557,12 @@ body {
   margin-bottom: 32px;
 }
 
+.feedback__button {
+  min-width: 250px;
+  max-width: 274px;
+
+}
+
 /* Страница каталога */
 
 .breadcrumbs {
@@ -1455,8 +1592,9 @@ body {
   background-position: center;
 }
 
-.breadcrumbs__item.is__current {
+.breadcrumbs__link.is__current {
   border-bottom: 1px solid #2d3440;
+  pointer-events: none;
 }
 
 .breadcrumbs__link {
@@ -1468,6 +1606,12 @@ body {
   color: #2d3440;
   text-decoration: none;
 }
+
+.breadcrumbs__link:hover {
+  opacity: 0.5;
+}
+
+/* Секция каталога продуктов */
 
 .ice__cream__catalog__title {
   font-weight: 900;
@@ -1539,6 +1683,16 @@ body {
   background-position: right 13px top 50%;
 }
 
+.select__input:focus {
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: inset 0 0 0 2px #fcfcfc;
+  outline: none;
+}
+
+.select__input:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
 .filter__price {
   min-height: 36px;
   padding: 8px 16px;
@@ -1570,6 +1724,22 @@ body {
   box-shadow: inset 0 0 0 6px #2d3440;
   top: -7.5px;
   cursor: pointer;
+}
+
+.range__button:focus {
+  background-color: #2d3440;
+  box-shadow: inset 0 0 0 6px #fcfcfc, 0 0 0 2px #2d3440;
+  outline: none;
+}
+
+.range__button:hover {
+  background-color: #2d3440;
+  box-shadow: inset 0 0 0 6px #fcfcfc;
+}
+
+.range__button:active {
+  background-color: #2d3440;
+  box-shadow: inset 0 0 0 6px #2d3440;
 }
 
 .range__button__min {
@@ -1685,7 +1855,7 @@ body {
 .filters__form__button {
   align-self: flex-end;
   font-size: 14px;
-  padding: 10px 32px;
+  padding: 8px;
   width: 185px;
   color: #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
@@ -1697,14 +1867,15 @@ body {
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
+.filters__form__button:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px #2d3440;
+  outline: none;
+}
+
 .filters__form__button:active {
   background-color: rgba(252, 252, 252, 0.5);
   box-shadow: 0 0 0 2px #feafc3;
-}
-
-.filters__form__button:focus {
-  background-color: #feafc3;
-  box-shadow: 0 0 0 2px #2d3440;
 }
 
 .filters__form__button:disabled {
