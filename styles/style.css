@@ -751,11 +751,30 @@ body {
 
 .social__link {
   color: #fcfcfc;
-  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
-  display: block;
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3), inset 0 0 0 2px rgba(252, 252, 252, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   border-radius: 50%;
+}
+
+.social__link:focus {
+  box-shadow: 0 0 0 2px #2d3440, inset 0 0 0 2px #2d3440;
+  background-color: #2d3440;
+  outline: none;
+}
+
+.social__link:hover {
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5), inset 0 0 0 2px #fcfcfc;
+  background-color: #2d3440;
+}
+
+.social__link:active {
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5), inset 0 0 0 2px #fcfcfc;
+  background-color: #2d3440;
+  opacity: 0.5;
 }
 
 .documents__list {
@@ -1560,7 +1579,6 @@ body {
 .feedback__button {
   min-width: 250px;
   max-width: 274px;
-
 }
 
 /* Страница каталога */
