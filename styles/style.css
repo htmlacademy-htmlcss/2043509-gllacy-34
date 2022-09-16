@@ -228,6 +228,21 @@ body {
   display: block;
   margin-right: 16px;
   transform: translateY(2px);
+  color: #2d3440;
+  border-radius: 5px;
+}
+
+.header__logo:focus {
+  color: rgba(252, 252, 252, 0.8);
+  box-shadow: 0 0 0 2px #2d3440;
+}
+
+.header__logo:hover {
+  color: rgba(252, 252, 252, 0.8);
+}
+
+.header__logo:active {
+  color: rgba(252, 252, 252, 0.6);
 }
 
 .header__navigation {
@@ -372,6 +387,10 @@ body {
   color: #2d3440;
   text-decoration: none;
   margin-right: 16px;
+}
+
+.phone__number:hover {
+  opacity: 0.6;
 }
 
 .site__searching__container {
@@ -731,7 +750,7 @@ body {
   padding: 44px 14px 24px 4px;
   display: grid;
   align-items: start;
-  grid-template-columns: 203px 1fr 193px;
+  grid-template-columns: 190px 1fr 193px;
   column-gap: 200px;
   row-gap: 30px;
 }
@@ -796,10 +815,34 @@ body {
   line-height: 20px;
   color: #2d3440;
   text-decoration: none;
+  border-radius: 5px;
+}
+
+.documents__link:hover {
+  color: #fcfcfc;
+}
+
+.documents__link:active {
+  color: #fcfcfc;
+  opacity: 0.5;
+}
+
+.documents__link:focus {
+  color: #fcfcfc;
+  box-shadow: 0 0 0 2px #242424;
+  outline: none;
 }
 
 .providers__link {
   font-weight: 700;
+}
+
+.providers__link:hover::before {
+  background-image: url("../images/icons/heart-fill-hover.svg");
+}
+
+.providers__link:focus::before {
+  background-image: url("../images/icons/heart-fill-hover.svg");
 }
 
 .providers__link::before {
@@ -826,6 +869,21 @@ body {
 .html__academy__main__link {
   margin-bottom: 14px;
   display: flex;
+  border-radius: 5px;
+  color: #2d3440;
+}
+
+.html__academy__main__link:focus {
+  color: rgba(252, 252, 252, 0.8);
+  box-shadow: 0 0 0 2px #2d3440;
+}
+
+.html__academy__main__link:hover {
+  color: rgba(252, 252, 252, 0.8);
+}
+
+.html__academy__main__link:active {
+  color: rgba(252, 252, 252, 0.6);
 }
 
 .html__academy__link {
@@ -835,6 +893,22 @@ body {
   color: #2d3440;
   text-decoration: none;
   border-bottom: 1px solid rgba(45, 52, 64, 0.5);
+  border-radius: 5px;
+}
+
+.html__academy__link:focus {
+  color: rgba(252, 252, 252, 0.8);
+  box-shadow: 0 0 0 2px #2d3440;
+}
+
+.html__academy__link:hover {
+  color: rgba(252, 252, 252, 0.8);
+  border-bottom: 1px solid rgba(252, 252, 252, 0.8);
+}
+
+.html__academy__link:active {
+  color: rgba(252, 252, 252, 0.6);
+  border-bottom: 1px solid rgba(252, 252, 252, 0.6);
 }
 
 .copyright__container {
@@ -1611,6 +1685,10 @@ body {
   line-height: 24px;
   color: #2d3440;
   text-decoration: none;
+}
+
+.contact__phone:hover {
+  opacity: 0.6;
 }
 
 .call__time {
