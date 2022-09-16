@@ -1220,6 +1220,15 @@ body {
   margin-bottom: 16px;
 }
 
+.product__link img {
+  scale: 1;
+  transition: scale 0.6s;
+}
+
+.product__link:hover img {
+  scale: 1.05;
+}
+
 .product__title {
   margin: 0 0 8px;
   font-weight: 700;
