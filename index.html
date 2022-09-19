@@ -175,7 +175,7 @@
               <h3 class="slider__title">Сливочное мороженое со вкусом банана</h3>
               <p class="slider__description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
                 наслаждение даже в самый жаркий летний день. </p>
-              <!-- При задержке кнопкам добавляется класс waiting -->
+              <!-- При задержке кнопкам добавляется класс loading -->
               <a class="main__button order__button" href="#">Заказать</a>
             </div>
             <div class="slider__image__wrapper">
@@ -416,39 +416,37 @@
           <h3 class="delivery__form__title">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
             заказ.</h3>
           <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="inputs__container">
-              <div class="input__wrapper">
-                <div class="label__container">
-                  <label class="delivery__label" for="date">Дата</label>
-                  <span class="tooltip">
-                    <button class="tooltip__button" type="button" aria-labelledby="tooltip-date">
-                    </button>
-                    <span class="tooltip__text" role="tooltip" id="tooltip-date">Укажите желаемую дату доставки
-                      в&nbsp;формате
-                      число.месяц.год</span>
-                  </span>
-                </div>
-                <input class="input delivery__date__input" type="text" placeholder="01.04.2020" id="date">
+            <div class="input__wrapper input__date__wrapper">
+              <div class="label__container">
+                <label class="delivery__label" for="date">Дата</label>
+                <span class="tooltip">
+                  <button class="tooltip__button" type="button" aria-labelledby="tooltip-date">
+                  </button>
+                  <span class="tooltip__text" role="tooltip" id="tooltip-date">Укажите желаемую дату доставки
+                    в&nbsp;формате
+                    число.месяц.год</span>
+                </span>
               </div>
-              <div class="input__wrapper">
-                <div class="label__container">
-                  <label class="delivery__label" for="phone">Телефон</label>
-                </div>
-                <input class="input delivery__phone__input" type="text" placeholder="+7 800 999-00-00" id="phone">
+              <input class="input delivery__date__input" type="text" placeholder="01.04.2020" id="date">
+            </div>
+            <div class="input__wrapper">
+              <div class="label__container">
+                <label class="delivery__label" for="phone">Телефон</label>
               </div>
-              <div class="input__wrapper input__wrapper__address">
-                <div class="label__container">
-                  <label class="delivery__label" for="address">Адрес</label>
-                  <span class="tooltip">
-                    <button class="tooltip__button" type="button" aria-labelledby="tooltip-address">
-                    </button>
-                    <span class="tooltip__text" role="tooltip" id="tooltip-address">Введите название улицы, дома и
-                      квартиры</span>
-                  </span>
-                </div>
-                <input class="input delivery__address__input" type="text" placeholder="ул. Большая Конюшенная, 19/8"
-                  id="address">
+              <input class="input delivery__phone__input" type="text" placeholder="+7 800 999-00-00" id="phone">
+            </div>
+            <div class="input__wrapper input__wrapper__address">
+              <div class="label__container">
+                <label class="delivery__label" for="address">Адрес</label>
+                <span class="tooltip">
+                  <button class="tooltip__button" type="button" aria-labelledby="tooltip-address">
+                  </button>
+                  <span class="tooltip__text" role="tooltip" id="tooltip-address">Введите название улицы, дома и
+                    квартиры</span>
+                </span>
               </div>
+              <input class="input delivery__address__input" type="text" placeholder="ул. Большая Конюшенная, 19/8"
+                id="address">
             </div>
             <button class="additional__button delivery__button" type="submit">Отправить</button>
           </form>
@@ -532,6 +530,22 @@
         </p>
       </div>
     </footer>
+    <div class="modal__container">
+      <div class="modal__feedback__wrapper">
+        <button class="modal__close__button" type="button" aria-label="Закрыть форму обратной связи."></button>
+        <h2 class="modal__heading">Мы обязательно ответим вам!</h2>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="input feedback__input user__name__input" type="text" name="user-name" required="" value=""
+            placeholder="Имя и фамилия" aria-label="Введите ваши Имя и Фамилию.">
+          <!-- При неправильном заполнении поля ввода e-mail к <input> c классом email-input добавить класс is-invalid для показа сообщения -->
+          <input class="input feedback__input email__input" type="email" name="user-email" required="" value=""
+            placeholder="email@example.com" id="user-email" aria-label="Введите адрес электронной почты.">
+          <textarea class="input feedback__input comment__input" name="comment" aria-label="Напишите комментарий."
+            rows="6">В свободной форме</textarea>
+          <button class="feedback__submit__button additional__button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 
