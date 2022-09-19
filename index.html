@@ -59,7 +59,9 @@
         </ul>
       </nav>
       <div class="header__user__container">
-        <a class="phone__number" href="tel:+78005558628" aria-label="Контактный телефон.">+7 800 555-86-28</a>
+        <div>
+          <a class="phone__number" href="tel:+78005558628" aria-label="Контактный телефон.">+7 800 555-86-28</a>
+        </div>
         <div class="site__searching__container">
           <button class="user__navigation__button site__searching__button" type="button" aria-label="Поиск по сайту.">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,10 +88,13 @@
             <form class="site__searching__form" action="https://echo.htmlacademy.ru/" method="post">
               <ul class="user__inputs_list">
                 <li>
-                  <input class="input user__email" type="email" name="email" placeholder="email@example.com" required>
+                  <!-- При неправильном вводе в поля input добалять класс is__invalid -->
+                  <input class="input user__email" type="email" name="email" placeholder="email@example.com" required
+                    aria-label="Введите ваш email.">
                 </li>
                 <li>
-                  <input class="input user__password" name="password" type="password" required>
+                  <input class="input user__password" name="password" type="password"
+                    placeholder="&bull; &bull; &bull; &bull; &bull;" required aria-label="Введите пароль.">
                 </li>
               </ul>
               <button class="additional__button sign__in__button" type="submit">Войти</button>
