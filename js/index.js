@@ -7,10 +7,7 @@ let currentIndex = 0;
 
 const onSlideChange = (index) => {
   const activeSlide = document.querySelector(".slider__slide.is__active");
-  const activeBullet = document.querySelector(
-    ".slider__pagination__button.is__active"
-  );
-
+  const activeBullet = document.querySelector(".slider__pagination__button.is__active");
   document.body.style.backgroundColor = slides[index].dataset.color;
   slides.forEach((element) => (element.style.order = ""));
   activeSlide.classList.remove("is__active");
@@ -52,29 +49,29 @@ const initSlider = () => {
 
 initSlider();
 
-const feedbackButton = document.querySelector('.feedback__button');
-const modalCloseButton = document.querySelector('.modal__close__button');
-const modal = document.querySelector('.modal__container');
+const feedbackButton = document.querySelector(".feedback__button");
+const modalCloseButton = document.querySelector(".modal__close__button");
+const modal = document.querySelector(".modal__container");
 
-feedbackButton.addEventListener('click', (evt) => {
+feedbackButton.addEventListener("click", (evt) => {
   evt.preventDefault();
-  modal.classList.add('is__open');
+  modal.classList.add("is__open");
 });
 
-modalCloseButton.addEventListener('click', (evt) => {
+modalCloseButton.addEventListener("click", (evt) => {
   evt.preventDefault();
-  modal.classList.remove('is__open');
+  modal.classList.remove("is__open");
 });
 
-document.addEventListener('keydown', (evt) => {
-  if(evt.key === 'Escape') {
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape") {
     evt.preventDefault();
-    modal.classList.remove('is__open');
+    modal.classList.remove("is__open");
   }
 });
 
-document.addEventListener('click', (evt) =>  {
-  if ( evt.target === modal) {
-   modal.classList.remove('is__open');
+document.addEventListener("click", (evt) => {
+  if (evt.target === modal) {
+    modal.classList.remove("is__open");
   }
 });
