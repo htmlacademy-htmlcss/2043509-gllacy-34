@@ -6,6 +6,7 @@ const slidesAmount = slides.length;
 let currentIndex = 0;
 
 const onSlideChange = (index) => {
+  currentIndex = index;
   const activeSlide = document.querySelector(".slider__slide.is__active");
   const activeBullet = document.querySelector(".slider__pagination__button.is__active");
   document.body.style.backgroundColor = slides[index].dataset.color;
