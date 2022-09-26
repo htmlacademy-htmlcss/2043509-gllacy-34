@@ -71,7 +71,7 @@
           </button>
           <div class="site__searching__popup">
             <form class="site__searching__form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="input site__searching__input" type="search" placeholder="Поиск по сайту">
+              <input class="input site__searching__input" type="search" name="site-search" placeholder="Поиск по сайту">
             </form>
           </div>
         </div>
@@ -373,12 +373,12 @@
               технологий.
             </li>
             <li class="advantages__item advantages__item__2">
-              Закупка ингредиентов производится только у проверенных фермерских
-              хозяйств, с которыми нас связывает долговременное сотрудничество.
+              Закупка ингредиентов производится только у&nbsp;проверенных фермерских
+              хозяйств, с которыми нас&nbsp;связывает долговременное сотрудничество.
             </li>
             <li class="advantages__item advantages__item__3">
               Для приготовления мороженого используются сливки и молоко
-              высочайшего качества. Все ингредиенты и добавки произведены из
+              высочайшего качества. Все ингредиенты и&nbsp;добавки произведены из
               натурального сырья.
             </li>
             <li class="advantages__item advantages__item__4">
@@ -402,7 +402,7 @@
               самого вкусного, что у нас происходит. Обещаем не спамить и не слать
               всякой ненужной ерунды. Честно =) </p>
             <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="input newsletter__input" type="email" placeholder="email@example.com">
+              <input class="input newsletter__input" type="email" name="user-email" placeholder="email@example.com">
               <button class="additional__button newsletter__button" type="submit">Отправить</button>
             </form>
           </div>
@@ -432,13 +432,15 @@
                     число.месяц.год</span>
                 </span>
               </div>
-              <input class="input delivery__date__input" type="text" placeholder="01.04.2020" id="date">
+              <input class="input delivery__date__input" type="text" name="delivery-date" placeholder="01.04.2020"
+                id="date">
             </div>
             <div class="input__wrapper">
               <div class="label__container">
                 <label class="delivery__label" for="phone">Телефон</label>
               </div>
-              <input class="input delivery__phone__input" type="text" placeholder="+7 800 999-00-00" id="phone">
+              <input class="input delivery__phone__input" type="text" name="contact-phone"
+                placeholder="+7 800 999-00-00" id="phone">
             </div>
             <div class="input__wrapper input__wrapper__address">
               <div class="label__container">
@@ -450,8 +452,8 @@
                     квартиры</span>
                 </span>
               </div>
-              <input class="input delivery__address__input" type="text" placeholder="ул. Большая Конюшенная, 19/8"
-                id="address">
+              <input class="input delivery__address__input" type="text" name="address"
+                placeholder="ул. Большая Конюшенная, 19/8" id="address">
             </div>
             <button class="additional__button delivery__button" type="submit">Отправить</button>
           </form>

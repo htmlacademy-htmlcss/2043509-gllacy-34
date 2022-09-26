@@ -346,6 +346,25 @@ body {
   display: flex;
 }
 
+.header__navigation__item__catalog:focus-within .header__navigation__link {
+  background-color: #ff2f64;
+  color: #ffffff;
+}
+
+.header__navigation__item__catalog:focus-within .header__navigation__link:focus {
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: inset 0 0 0 2px #2d3440;
+  outline: none;
+  color: #2d3440;
+}
+
+.header__navigation__item__catalog:focus-within .header__navigation__link:active {
+  background-color: #fcfcfc;
+  box-shadow: inset 0 0 0 2px #2d3440;
+  outline: none;
+  color: #2d3440;
+}
+
 .header__catalog__popup {
   position: absolute;
   left: 0;
@@ -661,6 +680,14 @@ body {
   border-bottom: 1px solid #2d3440;
   box-sizing: content-box;
   text-align: center;
+}
+
+.help__link:hover {
+  opacity: 0.6;
+}
+
+.help__link:active {
+  opacity: 0.3;
 }
 
 .cart__container:focus-within .cart__button {
@@ -1047,7 +1074,7 @@ body {
 
 .slider {
   position: relative;
-  margin-bottom: 82px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -1575,7 +1602,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin: 0 0 43px;
+  margin: 0 0 45px;
 }
 
 .newsletter__form {
@@ -1629,7 +1656,7 @@ body {
 
 .delivery__content {
   z-index: 1;
-  padding-top: 104px;
+  padding-top: 103px;
 }
 
 .delivery__title {
@@ -1694,7 +1721,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
-  margin-right: 4px;
+  margin-right: 5px;
 }
 
 .tooltip__button {
@@ -1918,7 +1945,11 @@ body {
 }
 
 .filter__input__wrapper__fat {
-  padding: 7px 23px 7px 23px;
+  padding: 10px 23px 7px 23px;
+}
+
+.filter__input__wrapper__ingredients {
+  padding: 11px 23px 9px 23px;
 }
 
 .filter {
@@ -2127,13 +2158,14 @@ body {
 }
 
 .filter__ingredients {
-  margin-right: 16px;
+  margin-right: 19px;
 }
 
 .filters__form__button {
   align-self: flex-end;
+  transform: translateY(-2px);
   font-size: 14px;
-  padding: 8px;
+  padding: 8px 24px;
   width: 185px;
   color: #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
@@ -2198,7 +2230,7 @@ body {
   margin: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 24px);
+  grid-template-columns: repeat(auto-fit, minmax(24px, max-content));
   justify-items: center;
   max-width: 200px;
 }
@@ -2213,7 +2245,7 @@ body {
   color: #2d3440;
   min-width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 24px;
 }
 
 .pagination__link:hover {
