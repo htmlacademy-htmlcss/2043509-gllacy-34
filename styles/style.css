@@ -928,7 +928,7 @@ body {
 
 .documents__link {
   position: relative;
-  padding-left: 24px;
+  margin-left: 24px;
   display: flex;
   flex-wrap: wrap;
   font-weight: 400;
@@ -956,6 +956,8 @@ body {
 
 .providers__link {
   font-weight: 700;
+  margin-left: 0;
+  padding-left: 24px;
 }
 
 .providers__link:hover::before {
@@ -1669,14 +1671,6 @@ body {
   margin: 0 0 32px;
 }
 
-/* .inputs__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 20px;
-  margin-bottom: 32px;
-} */
-
 .input__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -2265,7 +2259,6 @@ body {
   position: absolute;
   right: 0;
 }
-
 
 /* Модальное окно */
 
