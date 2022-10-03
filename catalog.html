@@ -2,7 +2,7 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="./images/favicon.png">
@@ -28,7 +28,7 @@
             fill="currentColor" /></svg>
       </a>
       <nav class="header__navigation">
-        <h2 class="visually__hidden">Навигация по сайту.</h2>
+        <span class="visually__hidden">Навигация по сайту.</span>
         <ul class="header__navigation__list">
           <li class="header__navigation__item header__navigation__item__catalog">
             <a class="header__navigation__link is__current" href="#"> Каталог </a>
@@ -36,7 +36,8 @@
               <span class="catalog__popup__title">Новинки</span>
               <ul class="catalog__popup__list">
                 <li class="catalog__popup__item">
-                  <a class="catalog__popup__link" href="#">Сливочное</a>
+                  <!-- Для выделения текущей страницы добавить к ссылке класс is__current -->
+                  <a class="catalog__popup__link is__current" href="#">Сливочное</a>
                 </li>
                 <li class="catalog__popup__item">
                   <a class="catalog__popup__link" href="#">Щербеты</a>
@@ -64,27 +65,30 @@
         </div>
         <div class="site__searching__container">
           <button class="user__navigation__button site__searching__button" type="button" aria-label="Поиск по сайту.">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Иконка лупы.">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M2.663 7.33a4.667 4.667 0 1 1 8.028 3.238.683.683 0 0 0-.123.123A4.667 4.667 0 0 1 2.664 7.33Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"
                 fill="currentColor" /></svg>
           </button>
           <div class="site__searching__popup">
             <form class="site__searching__form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="input site__searching__input" type="search" name="site-search" placeholder="Поиск по сайту">
+              <input class="input site__searching__input" type="search" name="site-search" placeholder="Поиск по сайту"
+                aria-label="Ввод поискового запроса.">
             </form>
           </div>
         </div>
         <div class="user__account__container">
           <button class="user__navigation__button user__account__button" type="button"
             aria-label="Кнопка входа в аккаунт.">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Иконка входа">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M9 1.667C9 1.298 9.298 1 9.667 1h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H9.667a.667.667 0 1 1 0-1.333h2.666a.666.666 0 0 0 .667-.667V3a.666.666 0 0 0-.667-.667H9.667A.667.667 0 0 1 9 1.667ZM5.862 3.862c.26-.26.682-.26.943 0l3.329 3.329a.69.69 0 0 1 .129.177.664.664 0 0 1-.13.775L6.806 11.47a.667.667 0 1 1-.943-.942l2.195-2.196h-6.39a.667.667 0 1 1 0-1.333h6.39L5.862 4.805a.667.667 0 0 1 0-.943Z"
                 fill="currentColor" /></svg>
             Вход</button>
           <div class="user__account__popup">
-            <h2 class="user__account__title">Личный кабинет</h2>
+            <span class="user__account__title">Личный кабинет</span>
             <form class="site__searching__form" action="https://echo.htmlacademy.ru/" method="post">
               <ul class="user__inputs_list">
                 <li>
@@ -111,14 +115,15 @@
         </div>
         <div class="cart__container">
           <button class="user__navigation__button cart__button" type="button" aria-label="Корзина товаров.">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Иконка корзины покупок.">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                 fill="currentColor" /></svg>
             2 товара</button>
           <!-- Если в корзине нет товаров, то к div cart__popup добавить класс is__empty -->
           <div class="cart__popup">
-            <h2 class="cart__title">Корзина</h2>
+            <span class="cart__title">Корзина</span>
             <ul class="cart__list">
               <li class="cart__item">
                 <a class="cart__link" href="#">
@@ -288,7 +293,8 @@
               <!-- Чтобы сделать кнопку добавления в корзину не активной к классу  add__cart__link добавить класс disabled-->
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -306,7 +312,8 @@
               <span class="product__price">340 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -324,7 +331,8 @@
               <span class="product__price">330 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -342,7 +350,8 @@
               <span class="product__price">320 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -360,7 +369,8 @@
               <span class="product__price">330 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -378,7 +388,8 @@
               <span class="product__price">340 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -396,7 +407,8 @@
               <span class="product__price">270 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -414,7 +426,8 @@
               <span class="product__price">300 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -432,7 +445,8 @@
               <span class="product__price">310 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -450,7 +464,8 @@
               <span class="product__price">320 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -468,7 +483,8 @@
               <span class="product__price">360 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>
@@ -486,7 +502,8 @@
               <span class="product__price">280 &#8381;/кг</span>
               <a class="add__cart__link" href="#">
                 <span class="visually__hidden">Добавить в корзину</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  role="img" aria-label="Иконка корзины покупок.">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.167 1.25a.667.667 0 0 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.825 1.825 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611l-.473-2.361a.667.667 0 0 0-.654-.536H1.167ZM5.69 9.544 4.878 5.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                     fill="currentColor" /></svg>

@@ -72,7 +72,8 @@ body {
   font-weight: 700;
   border-radius: 26px;
   border: none;
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+    0 0 0 4px rgba(252, 252, 252, 0.4);
   background-color: #fcfcfc;
   color: #000000;
   text-decoration: none;
@@ -142,7 +143,8 @@ body {
   font-weight: 700;
   border: none;
   border-radius: 26px;
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+    0 0 0 4px rgba(255, 47, 100, 0.3);
   background-color: #ff2f64;
   color: #fcfcfc;
   text-decoration: none;
@@ -169,7 +171,8 @@ body {
 }
 
 .additional__button:hover {
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1), 0 0 0 4px rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1),
+    0 0 0 4px rgba(255, 47, 100, 0.3);
   background-color: rgba(252, 252, 252, 0.3);
   color: #2d3440;
 }
@@ -247,7 +250,6 @@ body {
 
 .page__header {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
   margin-bottom: 16px;
 }
@@ -311,7 +313,7 @@ body {
 
 .header__navigation__link.is__current {
   background-color: #ff2f64;
-  color: #ffffff;
+  color: #fcfcfc;
 }
 
 .header__navigation__link:hover.is__current {
@@ -419,10 +421,9 @@ body {
   background-color: #ffcbd8;
 }
 
-.catalog__popup__link:focus {
+.catalog__popup__link.is__current {
   background-color: #ff4a78;
   color: #fcfcfc;
-  outline: none;
 }
 
 .catalog__popup__link:active {
@@ -431,7 +432,7 @@ body {
 }
 
 .header__user__container {
-  max-width: 600px;
+  max-width: 500px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -918,7 +919,8 @@ body {
 
 .social__link {
   color: #fcfcfc;
-  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3), inset 0 0 0 2px rgba(252, 252, 252, 0.3);
+  box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3),
+    inset 0 0 0 2px rgba(252, 252, 252, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1221,8 +1223,9 @@ body {
 
 .slider__pagination {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 11px);
   gap: 8px;
+  max-width: 200px;
 }
 
 .slider__pagination__button {
